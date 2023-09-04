@@ -1,3 +1,86 @@
-img {
-   width: 100px;
+
+
+body{
+    background: linear-gradient(to right, rgb(239, 221, 255) 50%, rgb(230, 185, 252) 50% );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    text-align: center;
+
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.header-container p {
+    color: #ae25ae;
+}
+
+.title-information {
+    gap: 0.5rem;
+    background: linear-gradient(to right, #ae25ae 50%, #3c0d65 50% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+
+.information h2 {
+    gap: 0.5rem;
+    background: linear-gradient(to right, #ae25ae 50%, #3c0d65 50% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+
+.link{
+    display: flex;
+    gap:50px
+}
+
+.link a{
+    text-decoration: none;
+    color: #3c0d65 ;
+}
+
+img{
+    height: 15%;
+    width: 15%;
+    border-radius: 100%;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.information{
+    text-align: center;
+
+}
+
+.information-info a {
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+    background: linear-gradient(to right, #ae25ae 50%, #3c0d65 50% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
 }
