@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #d0e8fd;
+}
+
+
+/* INICIO ABOUT */
+.header-container {
+    padding: 50px 100px;
+    border-bottom: 1px solid #d1c0c0;
+}
+
+.header-container p, 
+.header-container span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header-container h1 {
+    width: 45%;
+    background-color: #d0e8fd;
+    padding: 20px 0;
+}
+
+.link {
+    padding: 30px 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.link a {
+    color: #000;
+    background-color: #75d9d5;
+}
+
+.experiencia,
+.educacao {
+    padding: 50px 100px 20px;
+}
+
+.experiencia h2,
+.educacao h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.experiencia h2:after,
+.educacao h2:after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    background-color: #000;
+    transform: translate(-50%, 50%);
+    top: 40%;
+    left: 50%;
+}
+
+.experiencia .experiencia-left,
+.educacao .educacao-left {
+    padding-bottom: 50px;
+}
+
+.experiencia-left, 
+.experiencia-right,
+.educacao-left, 
+.educacao-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiencia-left span,
+.experiencia-right span {
+    flex-basis: 30%;
+}
+
+.experiencia-left p,
+.experiencia-right p {
+    flex-basis: 70%;
+}
+
+.educacao-left span,
+.educacao-right span {
+    flex-basis: 40%;
+}
+
+.educacao-left p,
+.educacao-right p {
+    flex-basis: 60%;
+}
+
+@media only screen and (max-width:900px) {
+    .experiencia-left, .experiencia-right, .educacao-left, .educacao-right {
+        flex-flow: column;
+    }
+
+    .header-container h1 {
+        width: 100%;
+    }
+}
+
+/* FIM ABOUT */
